@@ -26,7 +26,6 @@ function initializeApp() {
 function renderHeroSection() {
     document.getElementById('hero-name').textContent = PERSONAL_INFO.name;
     document.getElementById('hero-title').textContent = PERSONAL_INFO.title;
-    document.getElementById('hero-bio').textContent = PERSONAL_INFO.bio;
     
     const emailLink = document.getElementById('hero-email');
     emailLink.href = `mailto:${PERSONAL_INFO.email}`;

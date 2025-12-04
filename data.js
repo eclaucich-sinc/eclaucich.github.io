@@ -17,11 +17,10 @@ const PERSON_LINKS = {
 // Personal Information
 const PERSONAL_INFO = {
   name: "Estanislao Claucich",
-  title: "PhD in Engineering Candidate & Computer Engineer",
+  title: "PhD in Engineering Student & Computer Engineer",
   email: "eclaucich@sinc.unl.edu.ar",
   location: "sinc(i), Santa Fe, Argentina",
   location_url: "https://sinc.unl.edu.ar/",
-  bio: "Computer Engineer specializing in Deep Learning, Fairness, and Computer Vision. Currently pursuing a PhD with a focus on bias mitigation in machine learning models, bridging the gap between rigorous academic research and practical software engineering solutions.",
   socials: [
     { 
       name: 'GitHub', 
@@ -45,7 +44,7 @@ const EDUCATION = [
     location: "Santa Fe, Argentina",
     period: "2023 - Present",
     advisors: "Rodrigo Echeveste and Enzo Ferrante",
-    details: ["Research area: Deep Learning, Fairness, Computer Vision"]
+    technologies: ["Deep Learning", "Fairness", "Computer Vision"]
   },
   {
     id: "eng",
@@ -62,7 +61,7 @@ const RESEARCH_EXPERIENCE = [
     id: "mics",
     role: "Research Internship at MICS",
     institution: "CentraleSupélec, Université Paris-Saclay",
-    location: "France",
+    location: "Paris, France",
     period: "Nov 2024 - Feb 2025",
     description: "FairMed-VLMs: Development of VLMs for Medical Image Analysis within the Algorithmic Fairness Framework.",
     advisors: "Stergios Christodoulidis and Maria Vakalopoulou"
