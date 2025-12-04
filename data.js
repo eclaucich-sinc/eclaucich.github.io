@@ -1,6 +1,5 @@
-import { Education, Experience, Publication, Language } from './types';
-
-export const PERSON_LINKS: Record<string, string> = {
+// Person links for advisor and author hyperlinks
+const PERSON_LINKS = {
   'Rodrigo Echeveste': 'https://scholar.google.com/citations?hl=es&user=AcT16qoAAAAJ',
   'Enzo Ferrante': 'https://scholar.google.com/citations?user=ArqlkTUAAAAJ&hl=es&oi=ao',
   'Stergios Christodoulidis': 'https://scholar.google.com/citations?user=-h5w30sAAAAJ&hl=es&oi=ao',
@@ -15,7 +14,8 @@ export const PERSON_LINKS: Record<string, string> = {
   'Lucas Mansilla': 'https://scholar.google.com/citations?hl=es&user=5WMFRWgAAAAJ'
 };
 
-export const PERSONAL_INFO = {
+// Personal Information
+const PERSONAL_INFO = {
   name: "Estanislao Claucich",
   title: "PhD in Engineering Candidate & Computer Engineer",
   email: "eclaucich@sinc.unl.edu.ar",
@@ -23,12 +23,21 @@ export const PERSONAL_INFO = {
   location_url: "https://sinc.unl.edu.ar/",
   bio: "Computer Engineer specializing in Deep Learning, Fairness, and Computer Vision. Currently pursuing a PhD with a focus on bias mitigation in machine learning models, bridging the gap between rigorous academic research and practical software engineering solutions.",
   socials: [
-    { name: 'GitHub', url: 'https://github.com/eclaucich-sinc', icon: 'Github' },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/estanislao-claucich/', icon: 'Linkedin' },
+    { 
+      name: 'GitHub', 
+      url: 'https://github.com/eclaucich-sinc',
+      icon: 'github'
+    },
+    { 
+      name: 'LinkedIn', 
+      url: 'https://www.linkedin.com/in/estanislao-claucich/',
+      icon: 'linkedin'
+    }
   ]
 };
 
-export const EDUCATION: Education[] = [
+// Education
+const EDUCATION = [
   {
     id: "phd",
     degree: "PhD in Engineering",
@@ -36,18 +45,19 @@ export const EDUCATION: Education[] = [
     location: "Santa Fe, Argentina",
     period: "2023 - Present",
     advisors: "Rodrigo Echeveste and Enzo Ferrante",
-    details: ["Research area: Deep Learning, Fairness, Computer Vision"],
+    details: ["Research area: Deep Learning, Fairness, Computer Vision"]
   },
   {
     id: "eng",
     degree: "Computer Engineering",
     institution: "Universidad Nacional del Litoral",
     location: "Santa Fe, Argentina",
-    period: "2017 - 2023",
-  },
+    period: "2017 - 2023"
+  }
 ];
 
-export const RESEARCH_EXPERIENCE: Experience[] = [
+// Research Experience
+const RESEARCH_EXPERIENCE = [
   {
     id: "mics",
     role: "Research Internship at MICS",
@@ -55,7 +65,7 @@ export const RESEARCH_EXPERIENCE: Experience[] = [
     location: "France",
     period: "Nov 2024 - Feb 2025",
     description: "FairMed-VLMs: Development of VLMs for Medical Image Analysis within the Algorithmic Fairness Framework.",
-    advisors: "Stergios Christodoulidis and Maria Vakalopoulou",
+    advisors: "Stergios Christodoulidis and Maria Vakalopoulou"
   },
   {
     id: "sinc",
@@ -64,11 +74,12 @@ export const RESEARCH_EXPERIENCE: Experience[] = [
     location: "Santa Fe, Argentina",
     period: "2021 - 2022",
     description: "Development of bias mitigation techniques for medical imaging based on machine learning models.",
-    advisors: "Rodrigo Echeveste and Enzo Ferrante",
-  },
+    advisors: "Rodrigo Echeveste and Enzo Ferrante"
+  }
 ];
 
-export const INDUSTRY_EXPERIENCE: Experience[] = [
+// Industry Experience
+const INDUSTRY_EXPERIENCE = [
   {
     id: "anlis",
     role: "Full-Stack Developer",
@@ -76,7 +87,7 @@ export const INDUSTRY_EXPERIENCE: Experience[] = [
     location: "Santa Fe, Argentina",
     period: "2021 - 2025",
     description: "Development of the national argentine medical system 'Registro Nacional de Fibrosis Quística (ReNaFQ)'.",
-    technologies: ["JavaScript", "MongoDB", "NodeJS", "React"],
+    technologies: ["JavaScript", "MongoDB", "NodeJS", "React"]
   },
   {
     id: "sbi",
@@ -85,11 +96,12 @@ export const INDUSTRY_EXPERIENCE: Experience[] = [
     location: "Santa Fe, Argentina",
     period: "2022 - 2023",
     description: "Development of solutions for the Guidewire Suite.",
-    technologies: ["Gosu", "Java", "Relational Databases"],
-  },
+    technologies: ["Gosu", "Java", "Relational Databases"]
+  }
 ];
 
-export const TEACHING_EXPERIENCE: Experience[] = [
+// Teaching Experience
+const TEACHING_EXPERIENCE = [
   {
     id: "ta-opt",
     role: "Senior Teaching Assistant",
@@ -97,7 +109,7 @@ export const TEACHING_EXPERIENCE: Experience[] = [
     location: "Santa Fe, Argentina",
     period: "2024 - Now",
     description: "Subject: Optimization and Machine Learning.",
-    technologies: ["Linear Regression", "SVM", "Clustering", "LDA", "QDA", "Decision Trees", "Ensembles", "MLP", "Regularization"],
+    technologies: ["Linear Regression", "SVM", "Clustering", "LDA", "QDA", "Decision Trees", "Ensembles", "MLP", "Regularization"]
   },
   {
     id: "ta-prog",
@@ -105,11 +117,12 @@ export const TEACHING_EXPERIENCE: Experience[] = [
     institution: "Facultad de Ingeniería Química (FIQ-UNL)",
     location: "Santa Fe, Argentina",
     period: "2024 - 2025",
-    description: "Subject: Introduction to Programming in Python.",
-  },
+    description: "Subject: Introduction to Programming in Python."
+  }
 ];
 
-export const PUBLICATIONS: Publication[] = [
+// Publications
+const PUBLICATIONS = [
   {
     id: "neurips25",
     authors: "Fabio De Sousa Ribeiro, Estanislao Claucich, Emma A.M. Stanley, Panos Dimitrakopoulos, Sotirios A. Tsaftaris, Enzo Ferrante, Ben Glocker & Rodrigo Echeveste",
@@ -124,7 +137,7 @@ export const PUBLICATIONS: Publication[] = [
     title: "Fairness of Deep Ensembles: On the interplay between per-group task difficulty and under-representation",
     venue: "ACM Conference on Fairness, Accountability, and Transparency (FAccT)",
     year: "2025",
-    url: "https://dl.acm.org/doi/10.1145/3715275.3732200",
+    url: "https://dl.acm.org/doi/10.1145/3715275.3732200"
   },
   {
     id: "tmlr24",
@@ -141,10 +154,24 @@ export const PUBLICATIONS: Publication[] = [
     venue: "Jornadas Argentinas de Informática (JAIIO)",
     year: "2022",
     url: "https://sedici.unlp.edu.ar/bitstream/handle/10915/151624/Documento_completo.pdf-PDFA.pdf?sequence=1&isAllowed=y"
-  },
+  }
 ];
 
-export const LANGUAGES: Language[] = [
+// Languages
+const LANGUAGES = [
   { language: "Spanish", level: "Native" },
-  { language: "English", level: "B2 (Upper Intermediate)" },
+  { language: "English", level: "B2 (Upper Intermediate)" }
+];
+
+// Core Technologies
+const CORE_TECHNOLOGIES = [
+  'Python', 
+  'Deep Learning', 
+  'Computer Vision', 
+  'React', 
+  'NodeJS', 
+  'MongoDB', 
+  'JavaScript', 
+  'Java', 
+  'Machine Learning'
 ];
